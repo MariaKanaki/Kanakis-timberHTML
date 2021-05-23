@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="el">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Κανάκης Αναστάσιος Κ Σια ΟΕ</title>
+        <link rel="stylesheet" href="iis20005.css">
+        <script src="iis20005.js" defer></script>
+    </head>
+    <body> 
+        <header>
+            <a href="#banner">
+                <img src="logo.png">
+            </a>
+            <ul class="navigation"> 
+                <li><a href="#about">Σχετικά με εμάς</a></li>
+                <li><a href="#products">Προϊόντα</a></li>
+                <li><a href="#contact">Επικοινωνία</a></li>
+            </ul>   
+        </header>
+        <section class="banner" id="banner">
+            <div class="content">
+                <h2>Οικοδομικά Υλικά Ξυλεία</h2>
+                <br>
+                <p>ΑΝΥΨΩΣΕΙΣ ΚΑΙ ΜΕΤΑΦΟΡΕΣ</p>
+                <br>
+                <br>
+                <a href="#contact" class="bannerbtn">Επικοινωνία</a>
+            </div>
+        </section>
+        <section class="about" id="about">
+            <div class="row">
+                <div class="col50about">
+                    <br>
+                    <br>
+                    <br>
+                    <h2>Σχετικά με εμάς</h2>
+                    <br>
+                    <br>
+                    <p>Η επιχείρηση «ΚΑΝΑΚΗΣ ΑΝΑΣΤΑΣΙΟΣ & ΣΙΑ ΟΕ» είναι μια δυναμική και συνεχώς αναπτυσσόμενη εταιρεία 
+                    που δραστηριοποιείται στον τομέα των οικοδομικών υλικών και της ξυλείας. </p>
+                    <br>
+                    <p> Με γνώμονα να διασφαλίσει την καλύτερη δυνατή ποιότητα στους πελάτες της, επιλέγει μέσα από μια διαδικασία
+                    εκτίμησης τι προϊόντα προσφέρει σε αυτούς. Στα 55 χρόνια λειτουργίας της έχει προσφέρει, και συνεχίζει να 
+                    προσφέρει αξιόπιστες λύσεις οικοδομικών υλικών και ξυλείας για κάθε κατασκευαστική ανάγκη σε όλους τους πελάτες
+                    που την εμπιστεύονται.</p>
+                </div>
+                <div class="col50image">
+                    <div class="AboutImg">
+                        <img src="about.jpg">
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="products" id="products">
+            <h1>Τα προιόντα μας</h1>
+            <br>
+            <div class="row">
+                <div class="col50">
+                    <br>
+                    <br>
+                    <h2>Κεραμίδια</h2>
+                    <br>
+                    <ul>
+                       
+                        <li><input type="checkbox" id="ΚΕΒΕ" name="ΚΕΒΕ" value="ΚΕΒΕ" onclick="KEBEckecked()">
+                            <label for="ΚΕΒΕ"> ΚΕΒΕ</label><br></li>
+                            <ul id="Ρωμαϊκά-Ολλανδικά" style="display:none">
+                                <li><input type="checkbox" id="ΡωμαϊκάKEBE" name="ΡωμαϊκάKEBE" value="ΡωμαϊκάKEBE" onclick="KEBEromaikackecked()">
+                                    <label for="Ρωμαϊκά"> Ρωμαϊκά </label><br></li>
+                                    <div id ="ΡωμαϊκάK" style="display:none">
+                                        <img src="romaiko.png" id=a1>
+                                        <br>
+                                        Ρωμαϊκά 0,45€/τμχ
+                                        <input type="number" name="ΡωμαϊκάKer" id="ΡωμαϊκάKer" min="0" max="10000000"></li>
+                                        <button class="mybtns" onclick="SynoloKEBErom()"> Προσθήκη στο Καλάθι </button>  
+                                        <p>Σύνολο: (€)</p>
+                                        <p id="timh1a"></p>
+                                    </div>   
+                                <li><input type="checkbox" id="ΟλλανδικάKEBE" name="ΟλλανδικάKEBE" value="ΟλλανδικάKEBE" onclick="KEBEolandikackecked()">
+                                    <label for="Ολλανδικά"> Ολλανδικά </label><br></li>
+                                    <div id ="ΟλλανδικάΚ" style="display:none">
+                                        <img src="olandiko.png" id=a2>
+                                        <br>
+                                        Ολλανδικά 0,45€/τμχ 
+                                        <input type="number" name="ΟλλανδικάKer" id="ΟλλανδικάKer" min="0" max="10000000"></li>
+                                        <button class="mybtns" onclick="SynoloKEBEol()"> Προσθήκη στο Καλάθι </button>  
+                                        <p>Σύνολο: (€)</p>
+                                        <p id="timh1b"></p>
+                                    </div>   
+                            </ul>
+                        <br>
+                        <br>
+                        <li><input type="checkbox" id="XALKIS" name="XALKIS" value="XALKIS" onclick="XALKISckecked()">
+                            <label for="XALKIS"> XALKIS</label><br></li>
+                                <ul id="Ρωμαϊκά-Ολλανδικά-XALKIS" style="display:none">
+                                    <li><input type="checkbox" id="ΡωμαϊκάXALKIS" name="ΡωμαϊκάXALKIS" value="ΡωμαϊκάXALKIS" onclick="XALKISromaikackecked()">
+                                        <label for="ΡωμαϊκάXAL"> Ρωμαϊκά </label><br></li>
+                                        <div id ="ΡωμαϊκάX" style="display:none">
+                                            <img src="romaikoX.png" id=b1>
+                                            <br>
+                                            Ρωμαϊκά 0,50€/τμχ
+                                            <input type="number" name="ΡωμαϊκάXker" id="ΡωμαϊκάXker" min="0" max="10000000"></li>
+                                            <button class="mybtns" onclick="SynoloXALKISrom()"> Προσθήκη στο Καλάθι </button>  
+                                            <p>Σύνολο: (€)</p>
+                                            <p id="timh2a"></p>
+                                        </div>   
+                                    <li><input type="checkbox" id="ΟλλανδικάXalkis" name="ΟλλανδικάXalkis" value="ΟλλανδικάXalkis" onclick="XALKISolandikackecked()">
+                                        <label for="ΟλλανδικάXAL"> Ολλανδικά </label><br></li>
+                                        <div id ="ΟλλανδικάX" style="display:none">
+                                            <img src="olandX.png" id=b2>
+                                            <br>
+                                            Ολλανδικά 0,50€/τμχ 
+                                            <input type="number" name="ΟλλανδικάXker" id="ΟλλανδικάXker" min="0" max="10000000"></li>
+                                            <button class="mybtns" onclick="SynoloXALKISol()"> Προσθήκη στο Καλάθι </button>  
+                                            <p>Σύνολο: (€)</p>
+                                            <p id="timh2b"></p>
+                                        </div>   
+                                </ul>
+                        <br>
+                        <br>
+                        <li><input type="checkbox" id="ΒΙΟΜΠΛΟΚ" name="ΒΙΟΜΠΛΟΚ" value="ΒΙΟΜΠΛΟΚ" onclick="ΒΙΟΜΠΛΟΚckecked()">
+                            <label for="ΒΙΟΜΠΛΟΚ"> ΒΙΟΜΠΛΟΚ </label><br></li>
+                                <div id ="ΒΙΟΜΠΛΟΚlist" style="display:none">
+                                       <form>
+                                        <h3>Χρώμα κεραμίδι 0,73€/τμχ:</h3>
+                                        <input type="radio" name="1" id=check1 value="check1" onclick=changeImage(); checked>
+                                        <label for="Κόκκινο">Κόκκινο </label><br>
+                                        <input type="radio" name="1" id=check2 value="check2"  onclick=changeImage();>
+                                        <label for="Χάλκινο">Χάλκινο</label><br>
+                                        <input type="radio" name="1" id=check3 value="check3" onclick=changeImage();>
+                                        <label for="Πράσινο">Πράσινο</label><br>
+                                      </form>
+                                      <img id="a" src="kokkino.jpg" width="802" height="602" alt="">
+                                    <br>
+                                    Ποσότητα:
+                                    <input type="number" id="ΒΙΟΜΠΛΟΚkeramidia" name="ΒΙΟΜΠΛΟΚ" min="0" max="10000000" ></li>
+                                    <button class="mybtns" onclick="SynoloΒΙΟΜΠΛΟΚ()"> Προσθήκη στο Καλάθι </button>
+                                    <p>Σύνολο: (€)</p>
+                                    <p id="timhΒΙΟΜΠΛΟΚ"></p>
+                                </div>
+                
+                </div>
+                <div class="col50">
+                    <br>
+                    <br>
+                    <h2>Ξυλεία</h2>
+                    <br>
+                    <ul>
+                        <li><input type="checkbox" id="ΠΕΛΕΚΗΤΑ" name="ΠΕΛΕΚΗΤΑ" value="ΠΕΛΕΚΗΤΑ" onclick="ΠΕΛΕΚΗΤΑckecked()">
+                            <label for="ΠΕΛΕΚΗΤΑ"> ΠΕΛΕΚΗΤΑ</label><br></li>
+                            <div id=pelekitaID style="display:none">
+                             <p> Τιμή ανά κυβικό 250€</p>
+                            <input type="number" id="ΠΕΛΕΚΗΤΑid" name="ΠΕΛΕΚΗΤΑ" min="0" max="10000000"><img src="pelekita.jpg" id=imageΠΕΛΕΚΗΤΑ></li>
+                            <button class="mybtns" onclick="SynoloΠΕΛΕΚΗΤΑ()"> Προσθήκη στο Καλάθι </button>  
+                                    <p>Σύνολο: (€)</p>
+                                    <p id="timhΠΕΛΕΚΗΤΑ"></p>
+                        </div> 
+                        <br>
+                        <br>
+                        <li><input type="checkbox" id="ΠΡΙΣΤΑ" name="ΠΡΙΣΤΑ" value="ΠΡΙΣΤΑ" onclick="ΠΡΙΣΤΑckecked()">
+                            <label for="ΠΡΙΣΤΑ"> ΠΡΙΣΤΑ  </label><br></li>
+                            <div id=pristaID style="display:none">
+                                <p>Τιμή ανά κυβικό 240€</p>
+                               <input type="number" id="ΠΡΙΣΤΑid" name="ΠΡΙΣΤΑ" min="0" max="10000000"><img src="prista.jpg" id=imageΠΡΙΣΤΑ></li>
+                               <button class="mybtns" onclick="SynoloΠΡΙΣΤΑ()"> Προσθήκη στο Καλάθι </button>  
+                                       <p>Σύνολο: (€)</p>
+                                       <p id="timhΠΡΙΣΤΑ" ></p>
+                           </div> 
+                        <br>
+                        <br>
+                        <li><input type="checkbox" id="ΚΑΔΡΟΝΙΑ" name="ΚΑΔΡΟΝΙΑ" value="ΚΑΔΡΟΝΙΑ" onclick="ΚΑΔΡΟΝΙΑckecked()">
+                            <label for="ΚΑΔΡΟΝΙΑ"> ΚΑΔΡΟΝΙΑ</label><br></li>
+                            <div id=kadroniaID style="display:none">
+                                <p>
+                                   Τιμή ανά κυβικό 240€
+                               </p>
+                               <input type="number" id="ΚΑΔΡΟΝΙΑid" name="ΚΑΔΡΟΝΙΑ" min="0" max="10000000"><img src="kadronia.jpg" id=imageΚΑΔΡΟΝΙΑ></li>
+                               <button class="mybtns" onclick="SynoloΚΑΔΡΟΝΙΑ()"> Προσθήκη στο Καλάθι </button>  
+                                       <p>Σύνολο: (€)</p>
+                                       <p id="timhΚΑΔΡΟΝΙΑ"></p>
+                           </div> 
+                    </ul>
+                </div>
+                <h2> ΣΥΝΟΛΟ:</h2> 
+                <h2 id="genikosynolo"></h2>
+                <h2>€</h2> 
+                <button onclick=clean() id=btnclean> Καθαρισμός Καλαθιού </button>
+            </div>
+        </section>
+        <section  class="contact" id="contact">
+            <div class="row">
+                <div class="colcontact">
+                   <div class="contactForm">
+                        <h1>Επικοινωνήστε μαζί μας</h1>
+                        <br>
+                        <div class="inputBox">
+                            <input type="text" placeholder="Όνομα">
+                        </div>
+                        <div class="inputBox">
+                            <input type="text" placeholder="Email">
+                        </div>
+                        <div class="inputBox">
+                            <textarea placeholder="Μήνυμα"></textarea>
+                        </div>
+                        <div class="inputBox">
+                            <input type="submit" value="Αποστολή">
+                        </div>
+                   </div>
+                </div>
+                <div class="stoixeia">
+                    <a href="tel:2495022746"><li>Τηλέφωνο : 2495022746</li></a>
+                    <li>Διεύθυνση <br>
+                        Μακρυχώρι Λάρισας</li>
+                    <li>Φαξ <br>
+                        2495023036</li>
+                    <li>Ώρες Λειτουργίας <br>
+                        Δευτέρα - Παρασκευή 7:30 - 16:30 <br>
+                        Σάββατο 7:30 - 14:00 </li>
+               </div>
+            </div>
+        </section>
+        <div class="copyRight">
+            <p>Copyright 2020 Εργασία Προγραμματισμός Διαδικτύου. All Right Reserved</p>
+        </div>
+    </body>
+</html>
